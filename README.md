@@ -1,3 +1,70 @@
+# 🛒 Next.js Shopify Store
+
+## 🚀 Project Overview
+This is a fully functional **e-commerce store** built with **Next.js** for the frontend and connected to **Shopify** as the backend. The store allows users to browse products, add items to the cart, and complete purchases seamlessly.
+
+## 🛠️ Tech Stack
+- **Frontend:** Next.js, React, Tailwind CSS
+- **Backend:** Shopify API
+- **State Management:** React Context API / SWR
+- **Authentication:** Shopify Customer API
+- **Deployment:** Vercel
+
+## 📌 Features
+✅ **Dynamic Product Listings** – Fetch products directly from Shopify.
+✅ **Product Details Pages** – View detailed product information.
+✅ **Shopping Cart** – Add, remove, and update items.
+✅ **Checkout Process** – Secure checkout via Shopify.
+✅ **Customer Authentication** – Login and register with Shopify accounts.
+✅ **SEO Optimized** – Server-side rendering for better performance.
+
+## 📦 Installation
+1️⃣ Clone the repository:
+```bash
+git clone https://github.com/yourusername/next-shopify-store.git
+cd next-shopify-store
+```
+2️⃣ Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+3️⃣ Create a **.env.local** file and add your Shopify credentials:
+```env
+NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN=your-shopify-store.myshopify.com
+NEXT_PUBLIC_SHOPIFY_STOREFRONT_ACCESS_TOKEN=your-access-token
+```
+4️⃣ Run the development server:
+```bash
+npm run dev
+# or
+yarn dev
+```
+The store will be available at **http://localhost:3000**.
+
+## 🛍️ Connecting with Shopify
+1. Create a **Shopify Partner Account** and a development store.
+2. Generate a **Storefront API Access Token** in the Shopify admin panel.
+3. Add the credentials to the `.env.local` file as shown above.
+
+## 🚀 Deployment
+Deploy the store easily on **Vercel**:
+```bash
+vercel
+```
+Or manually in **Netlify, AWS, or Digital Ocean**.
+
+## 📜 License
+This project is licensed under the **MIT License**.
+
+---
+
+📩 **Questions?** Feel free to reach out or contribute to the repository!
+
+---
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

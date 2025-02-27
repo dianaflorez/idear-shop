@@ -16,6 +16,11 @@ export const Header = () => {
               Store
             </Link>
           </li>
+          <li>
+            <Link href="/aboutme">
+              Ours
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>)

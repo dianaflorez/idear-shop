@@ -1,7 +1,9 @@
+import styles from './Footer.module.sass';
+
 export const Footer = () => {
-    return (
-        <footer>
-            <p>E-Shop</p>
-        </footer>
-    );
-}
+  return(
+    <footer className={styles.Footer}>
+      <p>Idear Shop © {new Date().getFullYear()}</p>
+    </footer>
+  )
+};

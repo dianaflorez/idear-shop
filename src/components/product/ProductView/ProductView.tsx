@@ -12,9 +12,9 @@ interface ProductViewProps {
 export const ProductView = ({ product }: ProductViewProps) => {
 //   const router = useRouter()
 
-//   if(!product){
-//     router.push('/')
-//   }
+  // if(!product){
+  //   router.push('/')
+  // }
 
   return (
     <main className={styles.ProductView}>
@@ -43,6 +43,7 @@ export const ProductView = ({ product }: ProductViewProps) => {
         <span className={styles.ProductView__info__price}>
           $ {product.price}
         </span>
+        {/* <ProductViewItemsOrder maxQuantity={product.quantity} product= { product } /> */}
         <ProductViewItemsOrder maxQuantity={product.quantity} />
       </section>
     </main>

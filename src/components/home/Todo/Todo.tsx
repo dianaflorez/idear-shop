@@ -18,6 +18,8 @@ export const Todo = () => {
             [...tasks, {id: Date.now(), text: task, completed: false}]
         );
         setTask("");
+        console.log(tasks);
+
     }
 
     const toggleTask = (id: any) => {
@@ -41,7 +43,7 @@ export const Todo = () => {
                     tasks.map(
                         (t) => (
                             <li key={t.id}>
-                                {t.completed ? '  ' : ' ✔ '}
+                                {t.completed ? ' _ ' : ' ✔ '}
                                 {t.text}
                                 <button onClick={ () => toggleTask(t.id) }>Completed</button>
                             </li>

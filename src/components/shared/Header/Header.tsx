@@ -1,10 +1,14 @@
 import Link from 'next/link'
-import { ShoppingCart } from '../ShoppingCart'
 import { validateAccessToken } from 'app/utils/auth/validateAccessToken'
 
 import styles from './Header.module.sass'
 // import styles from './Header.module.css'
 // import { cookies } from 'next/headers'
+
+// import ShoppingCart from '../ShoppingCart' // This is the original import but is replaced by the next line dynamic import
+import dynamic from 'next/dynamic';
+
+const NoSSRShoppingCart = dynamic(() => import('../ShoppingCart'), {ssr: false});
 
 export const Header = async () => {
   // const cookiesStore = cookies()
@@ -35,7 +39,7 @@ export const Header = async () => {
       </nav>
       <div className={styles.Header__user}>
         {customer?.firstName ? (<p>Hola! {customer.firstName}</p>) : (<Link href="/login">Login</Link>)}
-        <ShoppingCart />
+        <NoSSRShoppingCart />
       </div>
     </header>)
 }

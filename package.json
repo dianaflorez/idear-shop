@@ -9,11 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "ai": "^4.1.53",
+    "@ai-sdk/openai": "^1.2.1",
+    "ai": "^4.1.54",
     "classnames": "^2.5.1",
     "graphql-request": "^7.1.2",
     "next": "14.2.24",
-    "openai": "^4.86.1",
+    "openai": "^4.86.2",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.5.0",

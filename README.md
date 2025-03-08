@@ -3,6 +3,8 @@
 ## 🚀 Project Overview
 This is a fully functional **e-commerce store** built with **Next.js** for the frontend and connected to **Shopify** as the backend. The store allows users to browse products, add items to the cart, and complete purchases seamlessly.
 
+[Visitar IDEAR Shop](https://idear-shop.vercel.app/)
+
 ## 🛠️ Tech Stack
 - **Frontend:** Next.js, React, Tailwind CSS
 - **Backend:** Shopify API

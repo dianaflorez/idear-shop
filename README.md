@@ -33,7 +33,15 @@ yarn install
 3️⃣ Create a **.env.local** file and add your Shopify credentials:
 ```env
 NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN=your-shopify-store.myshopify.com
-NEXT_PUBLIC_SHOPIFY_STOREFRONT_ACCESS_TOKEN=your-access-token
+NEXT_PUBLIC_SHOPIFY_STOREFRONT_ACCESS_TOKEN=your-access
+-token
+SHOPIFY_HOSTNAME=""
+SHOPIFY_TOKEN=""
+CACHE_TOKEN=""
+SHOPIFY_GRAPHQL_ENDPOINT=""
+SHOPIFY_STOREFRONT_TOKEN=""
+OPENAI_API_KEY=""
+
 ```
 4️⃣ Run the development server:
 ```bash

@@ -8,7 +8,6 @@
     "start": "next start",
     "lint": "next lint",
     "analyze": "ANALYZE=true next build"
-
   },
   "dependencies": {
     "@ai-sdk/openai": "^1.2.1",
@@ -28,6 +27,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/sanitize-html": "^2.13.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.24",
     "sass": "^1.85.0",

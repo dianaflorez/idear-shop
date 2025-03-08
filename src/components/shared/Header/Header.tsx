@@ -34,6 +34,16 @@ export const Header = async () => {
               Ours
             </Link>
           </li>
+          <li>
+            <Link href="/chat">
+              Chat Bot
+            </Link>
+          </li>
+          <li>
+            <Link href="/my-account">
+              MyAccount
+            </Link>
+          </li>
         </ul>
         {/* {token ? (<p>Hola!</p>) : (<Link href="/login">Login</Link>)} */}
       </nav>

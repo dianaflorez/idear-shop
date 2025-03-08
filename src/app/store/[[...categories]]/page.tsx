@@ -2,6 +2,7 @@ import { ProductsWrapper } from "app/components/Store/ProductsWrapper"
 import { getCollectionProducts, getCollections } from "app/services/shopify/collections"
 import { getProducts } from "app/services/shopify/products"
 
+
 interface CategoryProps {
   params: {
     categories: string[],
@@ -21,7 +22,7 @@ export default async function Category(props: CategoryProps) {
     products = await getProducts()
   }
 
-  console.log('products', products)
+  // console.log('products', products)
 
   return (
     <ProductsWrapper products={products} />
